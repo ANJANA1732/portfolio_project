@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 /mvnw text eol=lf
 *.cmd text eol=crlf
+=======
+/gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary
+>>>>>>> 95825a61d6ac466ee7f2a40751350db0024a27f3
