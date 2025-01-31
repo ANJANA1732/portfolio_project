@@ -6,8 +6,8 @@ import org.hibernate.annotations.GenericGenerator;
 import java.util.UUID;
 
 @Entity
-@Table(name = "Project_tb")
-public class Project {
+@Table(name = "About_tb")
+public class About {
 
     @Id
     @GeneratedValue(generator = "UUID")
@@ -15,10 +15,6 @@ public class Project {
     @Column(updatable = false, nullable = false)
     private UUID id;
 
-    private String name;
-
-    @Lob
-    private byte[] image;
 
     @Lob
     @Column(nullable = false, columnDefinition = "TEXT")
@@ -31,22 +27,6 @@ public class Project {
 
     public void setId(UUID id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public byte[] getImage() {
-        return image;
-    }
-
-    public void setImage(byte[] image) {
-        this.image = image;
     }
 
     public String getDescription() {
